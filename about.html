@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Home</title>
+    <link rel="stylesheet" href="output.css">
+
+    <style>
+        body {
+            background-image: radial-gradient(circle, rgb(4, 63, 93), #030712);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .custom-background {
+            background-image: url('IMGS/water6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+        }
+
+        .nav-transparent {
+            background: transparent;
+        }
+
+        .nav-opaque {
+            background-image: linear-gradient(to right, #3730a3, #8b5cf6, #ec4899);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-custom">
+    <!-- HEADER -->
+    <header>
+        <nav id="navbar" class=" fixed w-full top-0 z-50 transition-all duration-300 nav-transparent">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <a href="./index.html"
+                            class="flex-shrink-0 flex items-center mr-6 border-2 border-fuchsia-300 rounded-lg m-1 p-1 hover:bg-indigo-800">
+                            <img class="h-auto w-12" src="assets/logo.png" alt="Logo">
+                            <h1 class="text-xl font-bold md:text-2xl md:font-black text-fuchsia-300 mx-2">SUPRIL</h1>
+                        </a>
+                        <div class="hidden md:flex md:items-center md:space-x-8">
+                            <a href="./index.html"
+                                class="text-lime-400  hover:text-cyan-400 px-3 py-2 rounded-md text-lg md:text-xl font-bold">Home</a>
+                            <a href="./about.html"
+                                class="text-lime-400  hover:text-cyan-400 px-3 py-2 rounded-md text-lg md:text-xl font-bold">About</a>
+                            <a href="./all-quiz.html"
+                                class="text-lime-400  hover:text-cyan-400 px-3 py-2 rounded-md text-lg md:text-xl font-bold">Quiz</a>
+                            <a href="./leaderboard.html"
+                                class="text-lime-400  hover:text-cyan-400 px-3 py-2 rounded-md text-lg md:text-xl font-bold">Leaderboard</a>
+                            <a href="./contact.html"
+                                class="text-lime-400  hover:text-cyan-400 px-3 py-2 rounded-md text-lg md:text-xl font-bold">Contact</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="relative">
+
+                            <button id="profile-button"
+                                class="bg-gray-200 p-2 mx-2 rounded-full flex items-center text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <img class="w-8 h-8" src="prf1.png" alt="Profle">
+                            </button>
+                            <div id="profile-dropdown"
+                                class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                                <div class="py-1" role="menu" aria-orientation="vertical"
+                                    aria-labelledby="options-menu">
+                                    <a href="./profile.html"
+                                        class="block px-4 py-1 text-xl font-bold text-lime-400  hover:text-cyan-400"
+                                        role="menuitem">FName LName</a>
+                                    <div class="w-full">
+                                        <div class="border-t-2 my-1 mx-2 border-white"></div>
+                                    </div>
+                                    <a href="./profile.html"
+                                        class="block px-4 py-1 text-lg font-bold text-lime-400  hover:text-cyan-400"
+                                        role="menuitem">@Username</a>
+                                    <a href="./profile.html"
+                                        class="block mx-2 my-2 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-bold rounded-lg text-md px-2 py-2 text-center"
+                                        role="menuitem">Your Profile</a>
+                                    <a href="#"
+                                        class="block mx-2 mt-2 mb-3 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-bold rounded-lg text-md px-5 py-2 text-center"
+                                        role="menuitem">Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="-mr-2 flex md:hidden">
+                            <button id="menu-button"
+                                class="bg-gray-200 p-2 rounded-md inline-flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="./index.html"
+                        class="text-lime-400  hover:text-cyan-400 block px-3 py-2  text-lg md:text-xl font-bold">Home</a>
+                    <a href="./about.html"
+                        class="text-lime-400  hover:text-cyan-400 block px-3 py-2 text-lg md:text-xl font-bold">About</a>
+                    <a href="./all-quiz.html"
+                        class="text-lime-400  hover:text-cyan-400 block px-3 py-2 text-lg md:text-xl font-bold">Quiz</a>
+                    <a href="./leaderboard.html"
+                        class="text-lime-400  hover:text-cyan-400 block px-3 py-2 text-lg md:text-xl font-bold">Leaderboard</a>
+                    <a href="./contact.html"
+                        class="text-lime-400  hover:text-cyan-400 block px-3 py-2 text-lg md:text-xl font-bold">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class=" h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed pt-20 p-2 md:p-12"
+    style="background-image: url('assets/circuit.jpg');">
+<div class="border-2 border-white rounded-2xl p-4 md:p-8 mx-3 mt-24 md:mx-10 my-10 place-content-center backdrop-blur-sm flex flex-col justify-center items-center gap-10">
+    <h1 class="text-4xl md:text-6xl font-bold text-center text-red-500">THIS PAGE IS UNDER DEVELOPMENT</h1>
+    <img src="assets/progress.jpg" class="w-full md:w-2/3 rounded-2xl" alt="">
+</div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 shadow-lg  text-white py-2">
+        <div class="flex flex-row space-x-2 mx-2 my-2 md:mx-5 md:my-5">
+            <div class="flex flex-row md:ml-5">
+                <div
+                    class="flex flex-row justif items-center border-2 border-fuchsia-300 rounded-xl m-1 px-1 md:px-2 hover:bg-indigo-800">
+                    <img class="w-12 h-12 md:w-14 md:h-14 mr-2" src="assets/logo.png" alt="Logo">
+                    <a class="my-3 text-xl font-bold md:text-2xl md:font-black text-fuchsia-300 mx-2"
+                        href="./index.html">SUPRIL</a>
+                </div>
+                <h1 class="md:mx-12 mx-4 my-5 text-xs md:text-2xl font-semibold md:font-bold text-nowrap">Developed by
+                    SUPRIL KUMAR
+                </h1>
+            </div>
+
+        </div>
+        <div class="w-full">
+            <div class="border-t-2 my-1 mx-5 md:mx-10 border-white"></div>
+        </div>
+        <div class="flex flex-col md:flex-row md:mx-14 md:my-3 md:justify-evenly">
+            <div class="flex md:flex-row space-x-4 md:space-x-14 mx-2 my-3 md:mx-14 md:px-14 justify-evenly">
+                <a class="text-lime-400  hover:text-cyan-400 text-md font-semibold md:text-xl md:font-bold md:mx-5"
+                    href="./index.html">Home</a>
+                <a class="text-lime-400  hover:text-cyan-400 text-md font-semibold md:text-xl md:font-bold md:mx-5"
+                    href="./about.html">About</a>
+                <a class="text-lime-400  hover:text-cyan-400 text-md font-semibold md:text-xl md:font-bold md:mx-5"
+                    href="./leaderboard.html">Leaderboard</a>
+                <a class="text-lime-400  hover:text-cyan-400 text-md font-semibold md:text-xl md:font-bold md:mx-5"
+                    href="./contact.html">Contact</a>
+            </div>
+
+            <div class="flex flex-row space-x-6 justify-center mx-14">
+                <a href="https://github.com/suprilkumar" target="_blank"><img class="w-10 h-10 bg-white"
+                        src="assets/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/supril-kumar/" target="_blank"><img class="w-10 h-10 bg-white"
+                        src="assets/linkedin.jpeg" alt="GitHub"></a>
+                <a href="https://wa.me/9910729289" target="_blank"><img class="w-10 h-10 bg-white"
+                        src="assets/whatsapp.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="">
+            <h1 class="text-center text-sm mt-4 md:mt-1">&copy; 2024 Super Brain QuizApp</h1>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>
