@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-Profile</title>
+    <title>Quiz-Home</title>
     <link rel="stylesheet" href="output.css">
 
     <style>
@@ -12,15 +12,6 @@
             background-image: radial-gradient(circle, rgb(4, 63, 93), #030712);
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-
-        .custom-background {
-            background-image: url('IMGS/water6.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 500px;
-            width: 100%;
         }
 
         .nav-transparent {
@@ -35,8 +26,8 @@
 </head>
 
 <body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-custom">
-     <!-- HEADER -->
-     <header>
+    <!-- HEADER -->
+    <header>
         <nav id="navbar" class=" fixed w-full top-0 z-50 transition-all duration-300 nav-transparent">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -119,149 +110,27 @@
         </nav>
     </header>
 
-
-
-    <main class="">
-        <section class="w-full bg-cover bg-center bg-no-repeat bg-fixed p-2 md:p-12 "
+    <main>
+        <section class="h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed pt-20 p-2 md:p-12"
             style="background-image: url('assets/circuit.jpg');">
-            <div class="flex flex-col md:flex-row justify-center items-center md:gap-8 mx-3 md:my-16 mt-20 mb-10">
-                <!-- PROFILE CARD -->
-                <div class="mx-6 my-4 w-full max-w-sm border-4 border-cyan-400 rounded-2xl shadow-2xl bg-gray-800 ">
-                    <div class="flex justify-end px-4 pt-4">
-                        <h1
-                            class="relative border-2 border-white inline-flex items-center px-2 py-1 text-lg md:text-2xl font-bold text-center text-black bg-yellow-400 rounded-lg ">
-                            #
-                            Rank</h1>
-                    </div>
-                    <div class="flex flex-col items-center pb-10">
-                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="prf1.png" alt="Bonnie image" />
-                        <h5 class="mb-1 text-xl md:text-2xl font-medium text-gray-900 dark:text-white">Fname Lname</h5>
-                        <span class="text-md md:text-lg text-gray-500 dark:text-gray-400">@username</span>
-                        <div class="flex mt-4 md:mt-6 gap-4 justify-center items-center">
-                            <a href="./profile-edit.html"
-                                class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Edit
-                                Profile</a>
-                            <a href="./delete-confirm.html"
-                                class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Delete
-                                Profile</a>
-                        </div>
-                        <div class="m-6 mb-1 border border-white rounded-lg">
-                            <h1 class="mx-10 my-2 text-white text-sm md:text-lg">Gender: </h1>
-                            <h1 class="mx-10 my-2 text-white text-sm md:text-lg">City: </h1>
-                            <h1 class="mx-10 my-1 text-white text-sm md:text-lg">Bio:</h1>
-                            <p class="mx-10 mb-3 text-xs text-white md:text-sm">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Nobis, dolores?</p>
-                        </div>
+            <div class="flex items-center justify-center my-20 mx-4 py-10">
+                <div
+                    class="bg-gradient-to-b from-blue-900 via-sky-700 to-blue-900  px-2 md:px-8 pt-6 pb-8 mb-4   border-4 border-cyan-400 rounded-2xl shadow-xl">
+                    <h2 class="md:text-3xl text-2xl font-bold mb-6 text-center text-white">Delete your profile</h2>
+                    <h2 class="md:text-xl text-base font-medium mb-6 text-center text-red-500 text-balance"> Are you sure you want to
+                        delete your profile? <br> This action is irreversible and all your data will be permanently removed
+                        from our system.</h2>
+                        <h2 class="md:text-xl text-xl font-bold mb-6 text-center text-white mt-5">Please confirm your decision</h2>
+                    <div class="flex flex-row justify-center">
+                        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm md:px-5 px-3 py-2.5 text-center me-2 mb-2">Back to Home</button>
+
+                        <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm md:px-5 px-3 py-2.5 text-center me-2 mb-2">CONFIRM DELETE</button>
+
                     </div>
                 </div>
-
-                <!-- SCORE TABLE CARD -->
-                <div class="my-4 relative overflow-x-auto border-4 border-cyan-400 rounded-xl shadow-2xl">
-                    <table class="w-full text-xs md:text-lg text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="px-2 py-3 md:px-5 md:py-4">
-                                    #
-                                </th>
-                                <th scope="col" class="px-2 py-3 md:px-5 md:py-4">
-                                    Quiz Category
-                                </th>
-                                <th scope="col" class="px-2 py-3 md:px-5 md:py-4">
-                                    Marks
-                                </th>
-                                <th scope="col" class="px-2 py-3 md:px-5 md:py-4">
-                                    Date
-                                </th>
-                                <th scope="col" class="px-2 py-3 md:px-5 md:py-4">
-                                    Time
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr
-                                class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    1
-                                </td>
-                                <th scope="row"
-                                    class="px-2 py-3 md:px-4 md:py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Computer Science
-                                </th>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    8/10
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    4/12/2024
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    4:06 pm
-                                </td>
-                            </tr>
-                            <tr
-                                class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    2
-                                </td>
-                                <th scope="row"
-                                    class="px-2 py-3 md:px-4 md:py-4font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    General knowledge
-                                </th>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    5/10
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    22/07/2024
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    12.45 pm
-                                </td>
-                            </tr>
-                            <tr
-                                class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    3
-                                </td>
-                                <th scope="row"
-                                    class="px-2 py-3 md:px-4 md:py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    History
-                                </th>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    8/10
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    12/06/2024
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    3:11 pm
-                                </td>
-                            </tr>
-                            <tr
-                                class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    4
-                                </td>
-                                <th scope="row"
-                                    class="px-2 py-3 md:px-4 md:py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Data Structures
-                                </th>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    2/10
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    23/04/2024
-                                </td>
-                                <td class="px-2 py-3 md:px-4 md:py-4">
-                                    12:45 am
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
         </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer class="bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 shadow-lg  text-white py-2">
@@ -299,8 +168,8 @@
                         src="assets/github.png" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/supril-kumar/" target="_blank"><img class="w-10 h-10 bg-white"
                         src="assets/linkedin.jpeg" alt="GitHub"></a>
-                <a href="https://wa.me/9910729289" target="_blank"><img class="w-10 h-10 bg-white" src="assets/whatsapp.png"
-                        alt="GitHub"></a>
+                <a href="https://wa.me/9910729289" target="_blank"><img class="w-10 h-10 bg-white"
+                        src="assets/whatsapp.png" alt="GitHub"></a>
             </div>
         </div>
         <div class="">
