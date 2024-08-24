@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-Login</title>
+    <title>Quiz-Home</title>
     <link rel="stylesheet" href="output.css">
 
     <style>
@@ -12,15 +12,6 @@
             background-image: radial-gradient(circle, rgb(4, 63, 93), #030712);
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-
-        .custom-background {
-            background-image: url('IMGS/water6.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 500px;
-            width: 100%;
         }
 
         .nav-transparent {
@@ -33,7 +24,6 @@
         }
     </style>
 </head>
-
 
 <body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-custom">
     <!-- HEADER -->
@@ -120,53 +110,101 @@
         </nav>
     </header>
 
-
     <main>
-        <section class=" h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed pt-20 p-2 md:p-12"
+        <section class="h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed pt-20 p-2 md:p-12"
             style="background-image: url('assets/circuit.jpg');">
-            <div class="flex-grow flex items-center justify-center my-24 mx-5 md:mx-10 py-16">
+            <div class="flex justify-center my-8 md:mt-20">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Dashboard</h1>
+            </div>
+            <!-- LINE -->
+            <div class="w-full">
+                <div class="border-t-2 mb-1 mt-4 md:my-4 mx-6 md:mx-12 border-white"></div>
+            </div>
+            <!-- GRIDS -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 my-8 mx-5">
+                <!-- GRID-1 -->
                 <div
-                    class="bg-gradient-to-b from-blue-900 to-sky-500  px-8 pt-6 pb-8 mb-4 w-full max-w-sm border-4 border-cyan-400 rounded-2xl shadow-xl">
-                    <h2 class="text-3xl font-bold mb-6 text-center text-white">Login</h2>
-                    <form class="max-w-sm mx-auto">
-                        <div class="mb-5">
-                            <label for="email"
-                                class="block mb-2 text-md font-medium text-gray-900 dark:text-white">Username</label>
-                            <input type="email" id="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="" required />
+                    class="bg-gradient-to-b from-blue-900 via-sky-700 to-blue-900  px-2 md:px-4 py-4 mb-4 border-2 md:border-4 border-cyan-400 rounded-2xl shadow-xl items-center">
+                    <h1 class="text-6xl md:text-8xl font-bold text-green-500 flex justify-center">10</h1>
+                    <h1 class="text-sm md:text-xl text-white flex justify-center">Active Users</h1>
+                    <div class="grid grid-rows-2 gap-2 my-4">
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Today</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                5</h1>
                         </div>
-                        <div class="mb-5">
-                            <label for="password"
-                                class="block mb-2 text-md font-medium text-gray-900 dark:text-white">Your
-                                password</label>
-                            <input type="password" id="password"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                required />
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Gain %</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                20%</h1>
                         </div>
-                        <div class="flex items-start mb-5">
-                            <div class="flex items-center h-5">
-                                <input id="remember" type="checkbox" value=""
-                                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                                    required />
-                            </div>
-                            <label for="remember"
-                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
-                                me</label>
+                    </div>
+                </div>
+                <!-- GRID-2 -->
+                <div
+                    class="bg-gradient-to-b from-blue-900 via-sky-700 to-blue-900  px-2 md:px-4 py-4 mb-4 border-2 md:border-4 border-cyan-400 rounded-2xl shadow-xl items-center">
+                    <h1 class="text-6xl md:text-8xl font-bold text-orange-500 flex justify-center">12</h1>
+                    <h1 class="text-sm md:text-xl text-white flex justify-center">Quizzes</h1>
+                    <div class="grid grid-rows-2 gap-2 my-4">
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Today</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                5</h1>
                         </div>
-                        <div class="flex justify-center items-center">
-                            <button type="button"
-                                class=" text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-md shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-bold rounded-full text-lg px-10 py-2 text-center me-2 mb-2">Submit</button>
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Gain %</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                20%</h1>
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <!-- GRID-3 -->
+                <div
+                    class="bg-gradient-to-b from-blue-900 via-sky-700 to-blue-900  px-2 md:px-4 py-4 mb-4 border-2 md:border-4 border-cyan-400 rounded-2xl shadow-xl items-center">
+                    <h1 class="text-6xl md:text-8xl font-bold text-teal-500 flex justify-center">153</h1>
+                    <h1 class="text-sm md:text-xl text-white flex justify-center">Submissions</h1>
+                    <div class="grid grid-rows-2 gap-2 my-4">
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Today</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                5</h1>
+                        </div>
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Gain %</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                20%</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- GRID-4 -->
+                <div
+                    class="bg-gradient-to-b from-blue-900 via-sky-700 to-blue-900  px-2 md:px-4 py-4 mb-4 border-2 md:border-4 border-cyan-400 rounded-2xl shadow-xl items-center">
+                    <h1 class="text-6xl md:text-8xl font-bold text-fuchsia-500 flex justify-center">110</h1>
+                    <h1 class="text-sm md:text-xl text-white flex justify-center">Questions</h1>
+                    <div class="grid grid-rows-2 gap-2 my-4">
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Today</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                5</h1>
+                        </div>
+                        <div class="border border-white rounded-xl py-2 px-2 flex justify-between items-center">
+                            <h1 class="text-sm md:text-lg text-white font-semibold">Gain %</h1>
+                            <h1
+                                class="text-sm md:text-xl font-semibold md:font-bold text- border-2 border-white rounded-full bg-amber-400 py-1 px-2">
+                                20%</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-
     </main>
-
 
     <!-- FOOTER -->
     <footer class="bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 shadow-lg  text-white py-2">
@@ -204,8 +242,8 @@
                         src="assets/github.png" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/supril-kumar/" target="_blank"><img class="w-10 h-10 bg-white"
                         src="assets/linkedin.jpeg" alt="GitHub"></a>
-                <a href="https://wa.me/9910729289" target="_blank"><img class="w-10 h-10 bg-white" src="assets/whatsapp.png"
-                        alt="GitHub"></a>
+                <a href="https://wa.me/9910729289" target="_blank"><img class="w-10 h-10 bg-white"
+                        src="assets/whatsapp.png" alt="GitHub"></a>
             </div>
         </div>
         <div class="">
@@ -216,4 +254,3 @@
 </body>
 
 </html>
-
